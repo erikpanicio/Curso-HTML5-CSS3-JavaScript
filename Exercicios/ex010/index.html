@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="images/foto-p.png" type="image/png"> <!--Caso o máximo da tela do navegador seja 750px aparecerá a imagem pequena-->
+        <source media="(max-width: 1050px)" srcset="images/foto-m.png" type="image/png"> <!--Caso o máximo da tela do navegador seja 1050px aparecerá a imagem média-->
+        <img src="images/foto-g.png" alt="Imagem flexível"> <!--Imagem padrão-->
+    </picture>
+
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5</p>
+    <audio src="midia/easy-lemon.mp3" controls></audio> <!--Forma limitada-->
+    <br>
+    <audio controls loop>
+        <source src="midia/easy-lemon.mp3" type="audio/mpeg"> <!--Se não conseguir carregar esse, carrega o debaixo-->
+        <source src="midia/easy-lemon.ogg" type="audio/ogg"> <!--Se não conseguir carregar esse, carrega o debaixo-->
+        <source src="midia/easy-lemon.wav" type="audio/wav"> <!--Se não conseguir carregar esse, mostra a mensagem a baixo-->
+        <p>Não foi possível carregar o áudio!</p>
+    </audio>
+</body>
+</html>
