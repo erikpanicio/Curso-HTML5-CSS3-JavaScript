@@ -12,9 +12,16 @@
             /*Medidas recomendadas px e em | 1em equivale a 16px, que é o valor padrão das fontes |
             em é referente ao tamanho padrão da fonte, então, mesmo mudando de dispositivo, ele se adaptará ao tamanho padrão da fonte do dispositivo*/
         }
-        h1, h2 {
+        h1{ /*Maneira comum*/
             font-family: 'Times New Roman', Times, serif;
+            font-style: italic;
+            text-decoration: underline;
         }
+        h2 { /*Maneira simplificada*/
+            font: italic bold 1.5em 'Times New Roman'; /* Ordem: font-style > font-weight > font-size > font-family */
+            text-decoration: underline;
+        }
+        
     </style>
 </head>
 <body>
