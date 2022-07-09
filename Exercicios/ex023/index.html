@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=], initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            background-color: gray;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0px;
+        }
+
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 20px 20px 20px 20px; /* cima esquerda > cima direita > baixo direita > baixo esquerda */
+        }
+
+        nav {
+            background-color: rgb(167, 166, 166);
+            padding: 5px;
+            box-shadow: 3px 3px 5px black; /* descolocamento horizontal > vertical > espalhamento > cor */
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin: 30px;
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 20px;
+        }
+
+        article {
+            background-color: lightgray;
+            padding: 5px;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Notícia1</a>
+            <a href="#">Notícia2</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Notícias</h2>
+            <article> 
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio a corrupti ad, porro reprehenderit sequi, iure quo tenetur reiciendis iste quam repellendus odio, nulla officia voluptatibus vitae id quidem delectus? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque architecto reprehenderit consequatur ullam maiores pariatur, suscipit perferendis blanditiis. Placeat quae est beatae quidem molestias asperiores mollitia provident, consectetur dolore quo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque odio quas alias, culpa quibusdam iusto amet incidunt, nostrum eligendi expedita error, provident ab? Deserunt error minima iure nostrum! Inventore, repellat.
+                </p>
+                <aside>
+                    <p>Artigo escrito por: X</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>Desenvolvido por: Erik</p>
+    </footer>
+</body>
+</html>
