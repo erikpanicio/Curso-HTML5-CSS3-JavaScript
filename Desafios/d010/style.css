@@ -20,6 +20,7 @@ header {
     color: white;
     height: 150px;
     padding: 20px;
+    box-shadow: 0px 10px 20px #026302;
 }
 
 header > h1 {
@@ -34,7 +35,7 @@ nav {
     text-align: left;
 }
 
-a {    
+nav > a {    
     font-style: none;
     color: white;
     text-decoration: none;
@@ -42,45 +43,88 @@ a {
     padding: 10px;
 }
 
+nav > a:hover{
+    color: green;
+    background-color: white;
+    border-radius: 10px;
+}
+
 main {
     background-color: white;
     text-align: justify;
     padding: 20px;
     width: 800px;
-    margin: auto;    
+    margin: auto;
+    box-shadow: 0px 10px 20px #026302;
 }
 
 main > p {
     padding: 15px 0px 20px 0px;
-    text-indent: 30px;
+    text-indent: 20px;
 }
 
 main > h1 {
     font-family: idroid;
     color: green;
-    padding-left: 20px;
 }
 
 main > h2 {
     font-family: idroid;
     color: green;
-    background-image: linear-gradient(to right, #3ebd3e5d, #ffffff);
+    background-image: linear-gradient(to right, #3ebd3e88, #ffffff);
     border-radius: 10px;
-    padding-left: 20px;
+    padding-left: 10px;
+}
+
+main > h3 {
+    padding: 10px;
+}
+
+strong {
+    color: green;
+}
+
+p > a {
+    background-color: #90ee9098;
+    color: green;
+    text-decoration: none;
+    font-weight: bold;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 img {
-    display: block; /* Elementos inline não são centralizados com margin: auto*/
+    display: block; /* Elementos inline não são centralizados com margin: auto */
     margin: auto;
 }
 
 #fundoiframe {
     background-color: green;
-    padding: 0px;
 }
 
 iframe {
     display: block;
     margin: auto;
     padding: 20px;
+}
+
+ul {
+    padding-bottom: 10px;
+    display: flex; /* não sei se está certo*/
+}
+
+.listaesquerda { /* não sei se está certo*/
+    
+}
+
+.listadireita { /* não sei se está certo*/
+    padding-left: 55%;
+}
+
+footer {
+    background-color: #008035;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    margin-top: 20px;
 }
