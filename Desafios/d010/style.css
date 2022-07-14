@@ -89,15 +89,6 @@ main h2 {
     width: 60%;
 }
 
-main h3 {
-    background-color: var(--cor4);
-    color: white;
-    height: 20px;
-    padding: 10px;
-    margin-top: 10px;
-    border-radius: 20px 20px 0px 0px;
-}
-
 main p {
     padding: 15px 0px;
     text-indent: 20px;
@@ -122,46 +113,56 @@ main a:hover {
     text-decoration: underline;
     color: var(--cor5);
 }
+a.externo::after {
+    content: '\00A0\1F517';
+}
 
 main img {
-    display: block; /* Elementos inline não são centralizados com margin: auto */
+    display: block; /* Elementos inline não são centralizados comargin: auto */
     margin: auto;
     width: 100%;
 }
 
 img.pequena {
-    max-width: 350px;
+    max-width: 250px;
 }
 
-#fundoiframe {
+div.video {
     background-color: green;
+    margin: 0px -20px;
+    position: relative;
+    padding-bottom: 59.1%; /* para que o vídeo não fique com bordas */
 }
 
-iframe {
-    display: block;
-    margin: auto;
+div.video iframe {
     padding: 20px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 90%;
+    height: 90%;
 }
 
-#fundo {
+aside {
     background-color: var(--cor1);
     padding-left: 10px;
     padding-right: 10px;
-    margin-top: 0px;
-    border-radius: 0px 0px 20px 20px;
+    margin-top: 25px;
+    border-radius: 20px;
 }
 
-ul {
+aside h3 {
+    background-color: var(--cor4);
+    color: white;
     padding: 10px;
-    display: flex; /* não sei se está certo*/
+    margin: -10px -10px 0px -10px;
+    border-radius: 20px 20px 0px 0px;
 }
 
-.listaesquerda { /* não sei se está certo*/
-    
-}
-
-.listadireita { /* não sei se está certo*/
-    padding-left: 55%;
+aside ul {
+    list-style-type: '\2714\00A0'; /* emoji de check | espaço */
+    list-style-position: inside;
+    columns: 2;
 }
 
 footer {
