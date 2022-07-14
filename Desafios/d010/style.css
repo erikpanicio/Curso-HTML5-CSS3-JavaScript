@@ -3,11 +3,22 @@
 @font-face {
     font-family: 'idroid';
     src: url('fonts/idroid.otf') format('opentype');
+    font-weight: normal;
+}
+
+:root {
+    --cor0: #90ee9098;
+    --cor1: #5bc75bc4;
+    --cor2: #69b369;
+    --cor3: #3ebd3ed8;
+    --cor4: #1a6e33;
+    --cor5: #026302;
 }
 
 * {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0px;
+    padding: 0px;
 }
 
 body {
@@ -15,20 +26,23 @@ body {
 }
 
 header {
-    text-align: center;
-    background-image: linear-gradient(to bottom, #69b369, #026302);
+    background-image: linear-gradient(to bottom, var(--cor2), var(--cor5));
     color: white;
+    text-align: center; 
     height: 150px;
     padding: 20px;
-    box-shadow: 0px 10px 20px #026302;
+    box-shadow: 0px 10px 20px var(--cor5);
 }
 
 header > h1 {
     padding: 10px;
+    
 }
 
 header > p {
     padding: 20px;
+    width: 480px; /* Para deixar a linha do texto quebrada sem usa <br> */
+    margin: auto;
 }
 
 nav {
@@ -47,38 +61,36 @@ nav > a:hover{
     color: green;
     background-color: white;
     border-radius: 10px;
+    transition-duration: 0.5s;
 }
 
 main {
     background-color: white;
-    text-align: justify;
     padding: 20px;
-    width: 800px;
+    max-width: 800px;
+    min-width: 300px;
     margin: auto;
     border-radius: 0px 0px 20px 20px;
-    box-shadow: 0px 10px 20px #026302;
+    box-shadow: 0px 10px 20px var(--cor5);
 }
 
-p {
-    padding: 15px 0px 20px 0px;
-    text-indent: 20px;
-}
-
-main > h1 {
+main h1 {
     font-family: idroid;
     color: green;
+    font-size: 2em;
 }
 
-main > h2 {
+main h2 {
     font-family: idroid;
     color: green;
-    background-image: linear-gradient(to right, #3ebd3e88, #ffffff);
+    background-image: linear-gradient(to right, var(--cor1), transparent);
     border-radius: 10px;
     padding-left: 10px;
+    width: 60%;
 }
 
-main > h3 {
-    background-color: #1a6e33;
+main h3 {
+    background-color: var(--cor4);
     color: white;
     height: 20px;
     padding: 10px;
@@ -86,12 +98,19 @@ main > h3 {
     border-radius: 20px 20px 0px 0px;
 }
 
-strong {
+main p {
+    padding: 15px 0px;
+    text-indent: 20px;
+    text-align: justify;
+    line-height: 1.5em;
+}
+
+main strong {
     color: green;
 }
 
-p > a {
-    background-color: #90ee9098;
+main a {
+    background-color: var(--cor0);
     color: green;
     text-decoration: none;
     font-weight: bold;
@@ -99,9 +118,19 @@ p > a {
     padding-right: 5px;
 }
 
-img {
+main a:hover {
+    text-decoration: underline;
+    color: var(--cor5);
+}
+
+main img {
     display: block; /* Elementos inline não são centralizados com margin: auto */
     margin: auto;
+    width: 100%;
+}
+
+img.pequena {
+    max-width: 350px;
 }
 
 #fundoiframe {
@@ -115,7 +144,7 @@ iframe {
 }
 
 #fundo {
-    background-color: #5bc75bc4;
+    background-color: var(--cor1);
     padding-left: 10px;
     padding-right: 10px;
     margin-top: 0px;
@@ -123,7 +152,7 @@ iframe {
 }
 
 ul {
-    padding-bottom: 10px;
+    padding: 10px;
     display: flex; /* não sei se está certo*/
 }
 
@@ -136,7 +165,7 @@ ul {
 }
 
 footer {
-    background-color: #008035;
+    background-color: var(--cor4);
     color: white;
     text-align: center;
     padding: 5px;
