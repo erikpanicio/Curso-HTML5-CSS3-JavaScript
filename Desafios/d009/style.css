@@ -1,13 +1,16 @@
-body{
+body {
     background-color: rgb(28, 28, 28);
 }
-h1{
+
+h1 {
     color: white;
     text-align: center;
 }
-div{
+
+div {
     text-align: center;
 }
-a{
+
+a {
     color: white;
 }
