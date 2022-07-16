@@ -29,7 +29,8 @@ header {
     background-image: linear-gradient(to bottom, var(--cor2), var(--cor5));
     color: white;
     text-align: center; 
-    height: 150px;
+    max-height: 200px;
+    min-height: 150px;
     padding: 20px;
     box-shadow: 0px 10px 20px var(--cor5);
 }
@@ -41,7 +42,8 @@ header > h1 {
 
 header > p {
     padding: 20px;
-    width: 480px; /* Para deixar a linha do texto quebrada sem usa <br> */
+    max-width: 480px; /* Para deixar a linha do texto quebrada sem usa <br> */
+    min-width: 300px;
     margin: auto;
 }
 
@@ -127,7 +129,7 @@ img.pequena {
     max-width: 250px;
 }
 
-video{
+video {
     padding-top: 5px;
 }
 
