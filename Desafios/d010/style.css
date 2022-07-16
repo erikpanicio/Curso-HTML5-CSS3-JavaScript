@@ -127,20 +127,14 @@ img.pequena {
     max-width: 250px;
 }
 
-div.video {
-    background-color: green;
-    margin: 0px -20px;
-    position: relative;
-    padding-bottom: 59.1%; /* para que o vídeo não fique com bordas */
+video{
+    padding-top: 5px;
 }
 
-div.video iframe {
-    padding: 20px;
-    position: absolute;
-    top: 5px;
-    left: 5px;
-    width: 90%;
-    height: 90%;
+.fundovideo {
+    background-color: green;
+    padding: 10px 20px;
+    margin: 0px -20px;    
 }
 
 aside {
