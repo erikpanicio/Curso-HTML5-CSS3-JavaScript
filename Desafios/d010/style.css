@@ -43,13 +43,14 @@ header > h1 {
 header > p {
     padding: 20px;
     max-width: 480px; /* Para deixar a linha do texto quebrada sem usa <br> */
-    min-width: 300px;
+    min-width: 250px;
     margin: auto;
 }
 
 nav {
     text-align: left;
-    min-width: 410px;
+    max-width: 480px;
+    min-width: 300px;
 }
 
 nav > a {    
