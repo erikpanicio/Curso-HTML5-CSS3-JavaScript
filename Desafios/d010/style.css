@@ -49,6 +49,7 @@ header > p {
 
 nav {
     text-align: left;
+    min-width: 410px;
 }
 
 nav > a {    
@@ -167,4 +168,5 @@ footer {
     text-align: center;
     padding: 5px;
     margin-top: 20px;
+   
 }
