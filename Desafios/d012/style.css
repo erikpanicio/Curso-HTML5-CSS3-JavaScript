@@ -67,7 +67,7 @@ section.imagem {
 }
 
 section.imagem p{
-    background-color: rgba(0, 0, 0, 0.747);
+    background-color: rgba(0, 0, 0, 0.438);
     display: inline-block;
     color: white;
     padding: 20px;
@@ -77,13 +77,13 @@ section.imagem p{
 section#imagem1 {
     background-image: url('images/background001.jpg');
     background-size: cover;
-    background-position: right center;
+    background-position: center center;
 }
 
 section#imagem2 {
     background-image: url('images/background002.jpg');
     background-size: cover;
-    background-position: right center;
+    background-position: center center;
 }
 
 footer {
