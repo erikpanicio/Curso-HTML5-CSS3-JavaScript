@@ -23,7 +23,7 @@ header {
     color: white;
     height: 13vw; /* mudar depois de aprender Media queries */
     text-align: center;
-    padding: 40px;
+    padding: 40px 0px 50px 0px;
 }
 
 header h1 {
