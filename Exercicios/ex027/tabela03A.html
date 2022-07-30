@@ -4,11 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tabelas</title>
+    <title>Tabelas complexas</title>
     <style>
         table {
             width: 400px;
             border-collapse: collapse;
+        }
+
+        caption {
+            font-size: 24px;
+            font-weight: bold;
+            padding: 10px;
+        }
+
+        tbody > tr:nth-child(odd){ /* Aceita: Even(par), Odd(ímpar), 2n, 3n...*/
+            background-color: lightgray;
         }
 
         td, th {
@@ -28,11 +38,12 @@
     </style>
 </head>
 <body>
-    <h1>Uso de tabelas complexas</h1>
+    
     <!-- 
         Anatomia de tabelas complexas:
 
         Table
+            Caption
             THead
                 TR, TD, TH
             TBody
@@ -42,10 +53,11 @@
      -->
 
      <table>
+        <caption>População das Unidades Federativas</caption> <!-- Legenda da tabela -->
         <thead>
             <tr>
-                <th>Estados</th>
-                <th>População</th>
+                <th scope="col">Estados</th> <!-- Scope="col" determina semânticamente que esse é o título da coluna -->
+                <th scope="col" style="width: 100px;">População</th> <!-- Scope="col" determina semânticamente que esse é o título da coluna | Se eu altero o style aqui, altera também para toda essa coluna -->
             </tr>
         </thead>
 
@@ -114,11 +126,55 @@
                 <td>Mato Grosso</td>
                 <td class="num">3 567 234</td>
             </tr>
+            <tr>
+                <td>Rio Grande do Norte</td>
+                <td class="num">3 560 903</td>
+            </tr>
+            <tr>
+                <td>Alagoas</td>
+                <td class="num">3 365 351</td>
+            </tr>
+            <tr>
+                <td>Piauí</td>
+                <td class="num">3 289 290</td>
+            </tr>
+            <tr>
+                <td>Distrito Federal</td>
+                <td class="num">3 094 325</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso do Sul</td>
+                <td class="num">2 839 188</td>
+            </tr>
+            <tr>
+                <td>Sergipe</td>
+                <td class="num">2 338 474</td>
+            </tr>
+            <tr>
+                <td>Rondônia</td>
+                <td class="num">1 815 278</td>
+            </tr>
+            <tr>
+                <td>Tocantins</td>
+                <td class="num">1 607 363</td>
+            </tr>
+            <tr>
+                <td>Acre</td>
+                <td class="num">906 876</td>
+            </tr>
+            <tr>
+                <td>Amapá</td>
+                <td class="num">877 613</td>
+            </tr>
+            <tr>
+                <td>Roraima</td>
+                <td class="num">652 713</td>
+            </tr>
         </tbody>
 
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th> <!-- Scope="row" determina semânticamente que esse é o título da linha -->
                 <td class="num"><strong>177 372 781</strong></td>
             </tr>
         </tfoot>
