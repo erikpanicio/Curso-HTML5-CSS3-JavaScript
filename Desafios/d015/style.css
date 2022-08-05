@@ -31,3 +31,34 @@ main section#telefone {
     width: 310px;
     
 }
+
+section div#home {
+    background-image: url('images/tela-home.jpg');
+    background-size: cover;
+    position: absolute;
+    top: 50.5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 472px;
+    width: 268px;
+    border-radius: 2px;
+}
+
+section#redes-sociais {
+    text-align: right;
+}
+
+section#redes-sociais img{
+    height: 70px;
+    width: 70px;
+    margin: 10px;
+    border-radius: 50%;
+    box-shadow: 5px 5px 10px rgb(0, 0, 0);
+    box-sizing: border-box; /* Para que as imagens não fiquem saltando */
+}
+
+section#redes-sociais img:hover {
+    border: 3px solid white;
+    transform: translate(-5px, -5px);
+    transition: transform 0.3s; /* Está realizando o transform em 0.3s */
+}
