@@ -32,17 +32,24 @@ main section#telefone {
     
 }
 
-section div#home {
-    background-image: url('images/tela-home.jpg');
-    background-size: cover;
-    position: absolute;
-    top: 50.5%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    height: 472px;
-    width: 268px;
-    border-radius: 2px;
+section#telefone iframe {
+    height: 485px;
+    width: 272px;
+    position: relative;
+    top: 73px;
+    left: 20px;
 }
+
+/* 
+Código antigo
+
+height: 472px;
+width: 268px;
+position: relative;
+top: 80px;
+left: 22px;
+
+*/
 
 section#redes-sociais {
     text-align: right;
