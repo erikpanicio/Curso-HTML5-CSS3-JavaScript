@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>If Else</title>
+</head>
+<body>
+    <h1>Sistema de Multas</h1>
+    <input type="number" name="text_vel" id="text_vel">
+    <input type="submit" value="Verificar" onclick="calcular()">
+    <div class="resultado"></div>
+
+    <script>
+        function calcular() {
+            var text_vel = window.document.getElementById("text_vel")
+            var res = window.document.getElementsByClassName("resultado")[0]
+            var velocidade = Number(text_vel.value)
+            if (velocidade >= 60){
+                res.innerHTML = "Multado"
+            }
+            else {
+                res.innerHTML = "Sem Multa"
+            }
+        }
+    </script>
+</body>
+</html>
