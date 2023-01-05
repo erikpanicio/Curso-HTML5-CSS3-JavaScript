@@ -1,19 +1,22 @@
-function carregar() {
-    var msg = document.getElementById("mensagem")
-    var img = document.getElementById("imagem")
-    var data = new Date()
-    var hora = data.getHours()
-    msg.innerHTML = `Agora são: ${hora} horas`
-    if (hora >= 0 && hora <= 12) {
-        img.src = "images/manha.png" /* altera o texto do src */
-        document.body.style.background = "#ACB77A"
-    }
-    else if (hora > 12 && hora <= 18){
-        img.src = "images/tarde.png"
-        document.body.style.background = "#E2883A"
-    }
-    else {
-        img.src = "images/noite.png"
-        document.body.style.background = "#115A77"
-    }
+var h1 = document.querySelector("h1")
+
+function azul() {
+    limpar()
+    h1.classList.add("azul")
+}
+
+function vermelho() {
+    limpar()
+    h1.classList.add("vermelho")
+}
+
+function verde() {
+    limpar()
+    h1.classList.add("verde")
+}
+
+function limpar() {
+    h1.classList.remove("azul")
+    h1.classList.remove("vermelho")
+    h1.classList.remove("verde")
 }

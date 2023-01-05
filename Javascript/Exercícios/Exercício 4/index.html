@@ -4,35 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contador</title>
+    <title>Verificador de Idade</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Vamos contar</h1>
+        <h1>Verificador de Idade</h1>
     </header>
-
     <section>
+        Ano de Nascimento:<input type="number" name="ano_nasc" id="ano_nasc">
+        <br>
+
+        Sexo:
         <label>
-            Inicio: <input type="number" name="inicio" id="inicio">
+            <input type="radio" name="sexo" id="sexo_m"> Masculino
         </label>
-        <br>
         <label>
-            Fim: <input type="number" name="fim" id="fim">
+            <input type="radio" name="sexo" id="sexo_f"> Feminino
         </label>
+
         <br>
-        <label>
-            Passo: <input type="number" name="passo" id="passo">
-        </label>
-        <br>
-        <input type="submit" value="Calcular" onclick="calcular()">
-        <br>
-        <div id="resposta"></div>
+        <input type="button" value="Verificar" onclick="verificar()">
+
+        <div id="resultado">Preencha os campos acima para ver o resultado</div>
     </section>
     <footer>
         <a href="https://github.com/erikpanicio" target="_blank">&copy; Erik Panicio</a>
     </footer>
-    
     <script src="script.js"></script>
 </body>
 </html>

@@ -1,37 +1,49 @@
-function calcular() {
-    var i = document.getElementById("inicio")
-    var f = document.getElementById("fim")
-    var p = document.getElementById("passo")
-    var res = document.getElementById("resposta")
-
-    if(i.value.length == 0 || f.value.length == 0 || p.value.length == 0) {
-        alert("[ERRO] Verifique os dados")
+function verificar() {
+    var data = new Date()
+    var ano = data.getFullYear()
+    var form_ano = document.getElementById("ano_nasc")
+    var res = document.getElementById("resultado")
+    if (form_ano.value.length == 0 || Number(form_ano.value) > ano) {
+        alert("Verifique os dados e tente novamente")
     }
     else {
-        var i = Number(inicio.value)
-        var f = Number(fim.value)
-        var p = Number(passo.value)
-        
-        res.innerHTML = "Contando:"
+        var form_sexo = document.getElementsByName("sexo")
+        var idade = ano - Number(form_ano.value)
 
-        if (p<=0){
-            alert ("[ERRO] Passo menor que zero. Passo definido para 1")
-            p = 1
-        }
-        if (i < f){
-            /* Contagem crescente */
-            for (var c=i;c<=f;c+=p) {
-                res.innerHTML += `${c} \u{1F449}`
+        var img = document.createElement("img") /* cria uma tag img */
+        img.setAttribute("id", "foto") /* da o id de nome foto para a tag */
+
+        if (form_sexo[0].checked) {
+            form_sexo = "Homem"
+            if (idade >= 0 && idade < 10) {
+                img.setAttribute("src", "images/foto-bebe-m.png")
+            }
+            else if (idade > 10 && idade <= 25){
+                img.setAttribute("src", "images/foto-jovem-m.png")
+            }
+            else if (idade > 25 && idade <= 50){
+                img.setAttribute("src", "images/foto-adulto-m.png")
+            }
+            else {
+                img.setAttribute("src", "images/foto-idoso-m.png")
             }
         }
-        else {
-            /* Contagem decrescente */
-            for (var c=i;c>=f;c-=p) {
-                res.innerHTML += `${c} \u{1F449}`
+        else if(form_sexo[1].checked) {
+            form_sexo = "Mulher"
+            if (idade >= 0 && idade < 10) {
+                img.setAttribute("src", "images/foto-bebe-f.png")
+            }
+            else if (idade > 10 && idade <= 25){
+                img.setAttribute("src", "images/foto-jovem-f.png")
+            }
+            else if (idade > 25 && idade <= 50){
+                img.setAttribute("src", "images/foto-adulto-f.png")
+            }
+            else {
+                img.setAttribute("src", "images/foto-idoso-f.png")
             }
         }
-        res.innerHTML += ` \u{1F3C1}`
+        res.innerHTML = `Você é ${form_sexo} e tem ${idade} anos <br>`
+        res.appendChild(img) /* adiciona a imagem */
     }
 }
-
-/* \u{1F3C1} */
