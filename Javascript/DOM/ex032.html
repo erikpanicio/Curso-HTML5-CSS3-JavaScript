@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            overflow-y: auto;
+            padding: 20px;
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam est veritatis ipsa ratione eligendi similique dolores delectus perferendis amet soluta nihil totam perspiciatis laboriosam, error molestias adipisci, illo, optio quisquam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit ducimus saepe expedita dolore nesciunt quasi quam possimus? Sequi quia temporibus aspernatur est a laborum sunt, enim deleniti voluptatum autem quae. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti possimus quibusdam, blanditiis, debitis quas iure repellendus laboriosam praesentium inventore hic distinctio commodi et provident, illum perferendis minus eius ipsa. Voluptatum.
+    </div>
+
+    <script>
+        console.log(document.querySelector("div").clientHeight) /* pega o tamanho puro, não pega coisas externas como border, rolagem lateral*/
+        console.log(document.querySelector("div").clientWidth) /* o valor é menor porque o rolagem diminui o tamanho da div */
+    </script>
+</body>
+</html>
