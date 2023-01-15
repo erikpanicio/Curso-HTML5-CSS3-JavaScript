@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 200px;
+            height: 2000px;
+            background-image: linear-gradient(purple, orange);
+            overflow-x: auto;
+            padding: 20px;
+            background-color: lightblue;
+        }
+
+        button {
+            display: none;
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam est veritatis ipsa ratione eligendi similique dolores delectus perferendis amet soluta nihil totam perspiciatis laboriosam, error molestias adipisci, illo, optio quisquam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit ducimus saepe expedita dolore nesciunt quasi quam possimus? Sequi quia temporibus aspernatur est a laborum sunt, enim deleniti voluptatum autem quae. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti possimus quibusdam, blanditiis, debitis quas iure repellendus laboriosam praesentium inventore hic distinctio commodi et provident, illum perferendis minus eius ipsa. Voluptatum.
+    </div>
+
+    <button onclick="subir()">Clique para voltar ao topo</button>
+
+    <script>
+        function subir() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            })
+        }
+
+        function aparecerBotao() {
+            if (window.scrollY == 0) {
+                document.querySelector("button").style.display = "none"
+            }
+            else {
+                document.querySelector("button").style.display = "block"
+            }
+        }
+
+        setInterval(aparecerBotao, 100) /* vai rodar a função a cada 100ms */
+        /* esse método deixa o site mais pesado, pois roda muitas vezes */
+
+    </script>
+</body>
+</html>
