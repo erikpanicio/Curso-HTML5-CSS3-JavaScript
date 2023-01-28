@@ -1,0 +1,1 @@
+console.log(Math.ceil(Math.random() * 100)) /* para pegar um número aleatório que não seja apenas 0-1, multiplica o random pelo valor máximo que quer, no caso 100 */
