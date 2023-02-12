@@ -1,0 +1,1 @@
+console.log("x".repeat(20)) /* repita 20 vezes o X */
