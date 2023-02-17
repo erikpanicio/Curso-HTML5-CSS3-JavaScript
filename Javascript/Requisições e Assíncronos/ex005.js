@@ -1,7 +1,7 @@
 var myPromise = new Promise(function(resolve, reject){
     var nome = "Erik"
 
-    if(nome === "Erik") {
+    if (nome === "Erik") {
         resolve("Usuário encontrado")
     }
     else {
