@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- , shrink-to-fit=no -->
+	<link rel="stylesheet" href="assets/css/bootstrap.css">
+	<title>Tamanho</title>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-2" style="background-color: pink;">1</div> <!-- o tamanho máximo é 12, significa que está ocupando 2 posições, o restante está preenchendo automaticamente -->
+			<div class="col" style="background-color: paleturquoise;">2</div>
+			<div class="col" style="background-color: pink;">3</div>
+		</div>
+
+		<br>
+
+		<div class="row">
+			<div class="col" style="background-color: pink;">1</div>
+			<div class="col-8" style="background-color: paleturquoise;">2</div>
+			<div class="col" style="background-color: pink;">3</div>
+		</div>
+
+		<br>
+
+		<div class="row">
+			<div class="col" style="background-color: pink;">1</div>
+			<div class="col-sm-8" style="background-color: paleturquoise;">2</div> <!-- dá para combinar -->
+			<div class="col" style="background-color: pink;">3</div>
+		</div>
+	</div>
+
+	<script src="assets/js/jquery-3.7.1.min.js"></script>
+	<script src="assets/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
