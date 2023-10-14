@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inherit</title>
+    <style>
+        .div1 {
+            background-color: black;
+            height: 500px;
+            width: 500px;
+        }
+
+        .div2 {
+            background-color: blue;
+            height: 200px;
+            width: inherit; /* herda o valor do item anterior, no caso, herda o width da div1*/
+        }
+    </style>
+</head>
+<body>
+    <div class="div1">
+        <div class="div2"></div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .container {
+            height: 500px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            background-color: rgb(189, 189, 189);
+        }
+
+        .container div {
+            height: 100px;
+            width: 100px;
+            background-color: red;
+            margin: 10px;
+            padding: 10px;
+        }
+
+        .div5 {
+            order: 1; /* altera a ordem da div. O padrão é 0, já que essa div vai ter ordem 1 ela vai para trás dos com ordem 0 */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div class="div5">5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+    </div>
+</html>

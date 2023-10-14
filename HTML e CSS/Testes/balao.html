@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balão</title>
+    <style>
+        .balao {
+            background-color: lightskyblue;
+            color: white;
+            padding: 20px;
+            display: inline-block;
+        }
+        
+        .balao::after {
+            content: "";
+            display: block;
+            position: absolute;
+            margin-top: 20px;
+            border: 20px solid;
+            border-color: lightskyblue transparent transparent transparent;
+        }
+    </style>
+</head>
+<body>
+    <div class="balao">Olá, tudo bem?</div>
+</body>
+</html>

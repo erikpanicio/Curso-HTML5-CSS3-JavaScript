@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .container1 {
+            display: flex;
+            flex-direction: row; /* na horizontal */
+            background-color: rgb(189, 189, 189);
+        }
+
+        .container2 {
+            display: flex;
+            flex-direction: row-reverse; /* na horizontal ao contrário */
+            background-color: rgb(189, 189, 189);
+        }
+
+        .container3 {
+            display: flex;
+            flex-direction: column; /* na vertical */
+            background-color: rgb(189, 189, 189);
+        }
+
+        .container4 {
+            display: flex;
+            flex-direction: column-reverse; /* na vertical ao contrário */
+            background-color: rgb(189, 189, 189);
+        }
+
+        div {
+            background-color: red;
+            margin: 10px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container1">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+
+    <div class="container2">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+
+    <div class="container3">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+
+    <div class="container4">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+</body>
+</html>

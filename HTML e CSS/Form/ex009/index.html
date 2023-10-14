@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pattern</title>
+</head>
+<body>
+    <form action="arquivo.php" method="GET">
+        
+        <label>
+            Data: <br>
+            <input type="text" name="email" pattern="(^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$)" title="Endereço de Email"> <!-- o valor digitado terá que ser de a-z A-Z 0-9 com um @ no meio, mais caracteres entre a-z A-Z 0-9, e no fim .com -->
+        </label>
+
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>

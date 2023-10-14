@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+img {
+    width: 400px;
+    height: 400px;
+}
+
+.imagem1 {
+    object-fit: fill; /* valor padrão */
+}
+
+.imagem2 {
+    object-fit: none; /* dá um zoom sem manter a qualidade */
+}
+
+.imagem3 {
+    object-fit: cover; /* dá um zoom na imagem para caber na tela, mantendo a qualidade */
+}
+
+.imagem4 {
+    object-fit: contain; /* a caixa onde está a imagem fica do mesmo jeito, mas a imagem diminui */
+}
+
+.imagem5 {
+    object-fit: scale-down; /* a mesma coisa que o contain */
+}
+
+

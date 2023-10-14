@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+div {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.botao {
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    background-image: linear-gradient(to top, #2E7CB2, #358CD0);
+    padding: 20px 40px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px 5px rgba(206, 201, 201, 0.753);
+}
+
+.botao:hover {
+    background-image: linear-gradient(to top,#3892D5, #3DA9F2);
+}

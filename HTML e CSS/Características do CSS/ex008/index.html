@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medidas Relativas: VH</title>
+    <style>
+        /* Suponhamos que a VH seja igual a 1000px, colocando um título e depois definindo a div como 100vh, essa div terá 1000px mais o título, gerando barra de rolagem, se tirarmos o título teramos apenas 100vh */
+
+        * {
+            margin: 0;
+        }
+        div {
+            background-color: lightgray;
+            height: 100vh; /* 100% da altura da tela, se a altura da tela valer 1000px, 100vh = 1000px | 50vh= 500px... */
+        }
+    </style>
+</head>
+<body>
+    <h1>Título</h1>
+    <div></div>
+</body>
+</html>

@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+[required] {
+    background-color: red;
+}
+
+[type=number] {
+    background-color: blue;
+}
+
+[name="nome3"] { /* aspas porque é texto */
+    background-color: purple;
+}
+
+[href*="curso"] { /* procura no link inteiro a palavra curso */
+    background-color: yellow;
+}
+
+[href^="http:"] { /* quando o link começar com http */
+    background-color: lightgray;
+}
+
+[href$="br"] { /* quando o link terminar com br */
+    background-color: lightgreen;
+}

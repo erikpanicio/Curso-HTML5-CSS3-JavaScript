@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletor NTH</title>
+    <style>
+        .div1 div:nth-child(2) { /* seleciona o elemento definido, nesse caso 2, que é o Texto 2 */
+            background-color: lightskyblue;
+        }
+
+        .div2 div:nth-child(even) { /* seleciona os elemento pares (pode ser EVEN ou ODD) */
+            background-color: red;
+        }
+
+        .div3 div:nth-last-child(2) { /* seleciona o segundo elemento de baixo para cima */
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="div1">
+        <div>Texto 1</div>
+        <div>Texto 2</div>
+        <div>Texto 3</div>
+        <div>Texto 4</div>
+        <div>Texto 5</div>
+    </div>
+    <br>
+    <div class="div2">
+        <div>Texto 1</div>
+        <div>Texto 2</div>
+        <div>Texto 3</div>
+        <div>Texto 4</div>
+        <div>Texto 5</div>
+    </div>
+    <br>
+    <div class="div3">
+        <div>Texto 1</div>
+        <div>Texto 2</div>
+        <div>Texto 3</div>
+        <div>Texto 4</div>
+        <div>Texto 5</div>
+    </div>
+</body>
+</html>

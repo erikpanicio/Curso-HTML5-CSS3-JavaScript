@@ -1,0 +1,422 @@
+
+@charset "UTF-8";
+
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+html {
+    /* font-size: 20px; */
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+}
+
+.container {
+    width: 1000px;
+    display: flex;
+}
+
+.header-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.logo {
+    margin: 0px 20px;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.header-flex ul {
+    display: flex;
+    list-style: none;
+}
+
+.header-flex li a {
+    color: gray;
+    padding: 10px;
+}
+
+.header-flex li:hover a {
+    background-color: #39aae1;
+    color: white;
+}
+
+.button-mobile {
+    display: none;
+    background-color: #0079E7;
+    color: white;
+    padding: 10px;
+    margin: 0px 40px;
+    cursor: pointer;
+}
+
+#apresentation {
+    background-image: url("images/img1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+.contents {
+    display: flex;
+    justify-content: center;
+}
+
+#apresentation .container {
+    flex-direction: column; /* para deixar o banners em baixo do title */
+}
+
+#apresentation .title {
+    width: 400px;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+    margin: 80px 0px 0px 20px;
+}
+
+#apresentation p.up {
+    font-size: 70px;
+    font-weight: bold;
+}
+
+#apresentation p.down {
+    font-size: 20px;
+    margin-top: 30px;
+    width: 80%;
+}
+
+.banners { /* talvez eu deva colocar #apresentation banners */
+    display: flex;
+    width: 100%;
+    margin-top: 80px;
+}
+
+.banner {
+    padding: 20px;
+    width: 100%;
+    color: white;
+}
+
+.banner h2 {
+    font-weight: normal;
+}
+
+.banner > p {
+    margin: 20px 0px;
+    font-size: 16px;
+}
+
+.banner a { /* display inline nao tem margin-top e bottom?? */
+    color: white;
+    border: 1px solid white;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.banner.item1 {
+    background-color: #39aae1;
+}
+
+.banner.item2 {
+    background-color: #0079E7;
+}
+
+.banner.item3 {
+    background-color: #2B4C99;
+}
+
+.banner.item3 .time {
+    display: flex;
+    margin: 20px 0px;
+}
+
+.banner.item3 .time p {
+    margin-bottom: 10px;
+    border-bottom: 1px solid gray;
+}
+
+/* para que o border-bottom fique na linha inteira */
+.day {
+    width: 50%;
+    text-align: left;
+}
+.hour {
+    width: 50%;
+    text-align: right;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    padding-right: 20px;
+    width: 66%;
+}
+
+h3 {
+    font-size: 20px;
+    margin: 20px 0px;
+}
+
+span.blue-line {
+    border-bottom: 3px solid #39aae1;
+}
+
+.box-news {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.news {
+    width: 310px;
+    margin-bottom: 30px;
+}
+
+.datas {
+    display: flex;
+    margin: 10px 0px 20px 0px;
+}
+
+.date {
+    background-color: #2B4C99;
+    color: white;
+    padding: 10px;
+    font-size: 12px;
+    margin-right: 5px;
+}
+
+.commentaries {
+    background-color: #39aae1;
+    color: white;
+    padding: 10px;
+    font-size: 12px;
+}
+
+article img {
+    width: 310px;
+    height: 190px;
+    border: 3px solid #2B4C99;
+    border-radius: 10px;
+}
+
+article .title {
+    font-size: 20px;
+    margin: 10px 0px;
+    font-weight: bold;
+}
+
+article .desc {
+    font-size: 14px;
+}
+
+aside {
+    width: 34%;
+}
+
+aside img {
+    width: 50%;
+}
+
+.departments {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.departments .image {
+    background-image: url(images/doctor2.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    width: 150px;
+    height: 150px;
+    margin: 0px 5px 20px 0px;
+}
+
+footer {
+    background-color: #1e1e1e;
+}
+
+footer .container {
+    flex-wrap: wrap;
+}
+
+footer .banners {
+    margin: 0;
+}
+
+.informations {
+    display: flex;
+}
+
+.informations h3 {
+    color: white;
+}
+
+.informations p {
+    color: gray;
+}
+
+.information {
+    width: 100%;
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+.information a {
+    color: white;
+}
+
+.medicenter-desc {
+    display: flex;
+    justify-content: space-between;
+}
+
+.address, .contact {
+    line-height: 20px;
+}
+
+p.year {
+    color: #39aae1;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 969px) {
+    main .container {
+        padding: 20px;
+    }
+
+    .box-news {
+        justify-content: center;
+    }
+
+    .news {
+        width: 100%;
+    }
+
+    article img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media (max-width: 883px) {
+.header-flex ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 75px;
+        right: 0px;
+        background-color: #0079E7;
+        color: white;
+        text-align: center;  
+    }
+
+    .header-flex li {
+        padding: 5px 10px;
+        border: 1px solid white;
+    }
+
+    .header-flex li a {
+        color: white;
+        padding: 0px;
+    }
+    
+    .header-flex li:hover a {
+        background-color: #0079E7;
+    }
+
+    .button-mobile {
+        display: block;
+    }
+
+    #apresentation {
+        background-size: auto;
+    }
+
+    .banners {
+        flex-direction: column;
+    }
+
+    .departments {
+        justify-content: center;
+    }
+
+    .informations {
+        flex-wrap: wrap;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 650px) {
+    main .container {
+        flex-wrap: wrap;
+    }
+
+    article {
+        width: auto;
+        padding: 0;
+    }
+    
+    aside {
+        width: 100%;
+    }
+
+    .departments .image {
+        margin: 20px;
+    }
+}
+
+@media (max-width: 420px) { /* quando o texto do apresentation chega no limite */
+    #apresentation .title {
+        width: 80%;
+    }
+
+    #apresentation p.up {
+        font-size: 15vw;
+    }
+
+    #apresentation p.down {
+        font-size: 5vw;
+    }
+}
+
+@media (max-width: 275px) { /* para deixar o mais responsivo possível*/
+    .day, .hour {
+        font-size: 5.5vw;
+    }
+
+    main .container {
+        padding: 0;
+    }
+
+    .box-make {
+        font-size: 6vw;
+    }
+
+    .informations {
+        padding: 0;
+    }
+
+    footer p {
+        font-size: 6vw;
+    }
+}

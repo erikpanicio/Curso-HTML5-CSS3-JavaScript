@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .container {
+            display: flex;
+            background-color: rgb(189, 189, 189);
+        }
+
+        .div1 {
+            background-color: red;
+            flex: 1; /* terá o mesmo tamanho que a div2 */
+            margin: 10px;
+            padding: 10px;
+        }
+
+        .div2 {
+            background-color: red;
+            flex: 1;
+            margin: 10px;
+            padding: 10px;
+        }
+
+        .div3 {
+            background-color: red;
+            flex: 3; /* terá 3 vezes o tamanho da div1 e da div2 */
+            margin: 10px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="div1">1</div>
+        <div class="div2">2</div>
+        <div class="div3">3</div>
+    </div>
+</body>
+</html>

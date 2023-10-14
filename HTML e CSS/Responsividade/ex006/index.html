@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alterando a variável</title>
+    <style>
+        :root {
+            --tamanho_fonte: 50px;
+        }
+
+        h1 {
+            font-size: var(--tamanho_fonte);
+        }
+
+        @media (max-width: 600px) {
+            :root {
+                --tamanho_fonte: 25px; /* quando a tela fica em 600px para baixo, ele altera o valor a variável, fazendo com que todos os atributos que utilizam essa variável tenham seus valores alterados */
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste</h1>
+</body>
+</html>

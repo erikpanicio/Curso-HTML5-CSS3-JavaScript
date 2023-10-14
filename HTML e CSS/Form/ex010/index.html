@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hidden</title>
+</head>
+<body>
+    <form action="arquivo.php" method="GET">
+        <input type="hidden" name="país" value="BR"> <!-- esse input passará para o php a região de onde o usuário está acessando o site, mas ele não deverá vê-lo, por isso se utiliza hidden. -->
+
+        <label>
+            Nome:
+            <input type="text" name="nome">
+        </label>
+
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
