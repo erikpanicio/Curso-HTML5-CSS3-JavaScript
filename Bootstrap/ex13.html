@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- , shrink-to-fit=no -->
+	<link rel="stylesheet" href="assets/css/bootstrap.css">
+	<title>Carrossel</title>
+</head>
+<body>
+	<div class="container">
+
+		<div id="slider-show" class="carousel slide"> <!-- é um carrossel e é deslizavel -->
+
+			<div class="carousel-inner"> <!-- todos os itens internos do carrossel -->
+			  <div class="carousel-item active"> <!-- item do carrosel, é o que vai aparecer quando iniciado -->
+				 <img src="assets/images/pizza1.jpg" class="w-100" alt=""> <!-- vai ficar na div toda (width: 100%) -->
+			  </div>
+			  <div class="carousel-item">
+				 <img src="assets/images/pizza2.jpg" class="w-100" alt="">
+			  </div>
+			</div>
+
+			<button class="carousel-control-prev" type="button" data-bs-target="#slider-show" data-bs-slide="prev"> <!-- botão de voltar -->
+			  <span class="carousel-control-prev-icon" aria-hidden="true"></span> <!-- imagem do botão -->
+			  <span class="visually-hidden">Previous</span>
+			</button>
+
+			<button class="carousel-control-next" type="button" data-bs-target="#slider-show" data-bs-slide="next"> <!-- botão de avançar -->
+			  <span class="carousel-control-next-icon" aria-hidden="true"></span> <!-- imagem do botão -->
+			  <span class="visually-hidden">Next</span>
+			</button>
+
+		 </div>
+
+	</div>
+	<script src="assets/js/jquery-3.7.1.min.js"></script>
+	<script src="assets/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

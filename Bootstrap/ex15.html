@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- , shrink-to-fit=no -->
+	<link rel="stylesheet" href="assets/css/bootstrap.css">
+	<title>Acordeon</title>
+</head>
+<body>
+	<div class="container">
+
+		<div id="acordeon" class="accordion">
+
+			<div class="accordion-item">
+				<h2 class="accordion-header">
+					<button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#texto-escondido1">Pergunta 1</button>
+				</h2>
+				<div id="texto-escondido1" class="accordion-collapse collapse" data-bs-parent="#acordeon">
+					<div class="accordion-body">
+					Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio consequuntur ut numquam esse. Laudantium nemo eos corrupti delectus eius voluptas deleniti facilis unde quidem maiores voluptatem ut soluta, rerum eum?
+					</div>
+				</div>
+			</div>
+
+			<div class="accordion-item">
+				<h2 class="accordion-header">
+					<button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#texto-escondido2">Pergunta 2</button>
+				</h2>
+				<div id="texto-escondido2" class="accordion-collapse collapse" data-bs-parent="#acordeon">
+					<div class="accordion-body">
+						Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio consequuntur ut numquam esse. Laudantium nemo eos corrupti delectus eius voluptas deleniti facilis unde quidem maiores voluptatem ut soluta, rerum eum?
+					</div>
+				</div>
+				</div>
+			</div>
+
+	</div>
+
+	<script src="assets/js/jquery-3.7.1.min.js"></script>
+	<script src="assets/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
