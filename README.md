@@ -1,7 +1,2 @@
-# Projetos Principais:
 
-<a href="https://erikpanicio.github.io/Curso-HTML5-CSS3-JavaScript/HTML%20E%20CSS/Desafios/d010/index.html">História do mascote do Android (não está totalmente responsivo)</a>
-<br>
-<a href="https://erikpanicio.github.io/Curso-HTML5-CSS3-JavaScript/HTML%20E%20CSS/Desafios/d012/index.html">Cordel sobre tecnologia</a>
-<br>
-<a href="https://erikpanicio.github.io/Curso-HTML5-CSS3-JavaScript/HTML E CSS/Desafios/d015/index.html">Redes Sociais</a>
+https://erikpanicio.github.io/Estudo-Front-end/Bootstrap/ex22.html
