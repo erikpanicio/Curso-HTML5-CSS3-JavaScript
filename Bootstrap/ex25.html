@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- , shrink-to-fit=no -->
+	<link rel="stylesheet" href="assets/css/bootstrap.css">
+	<title>Tooltip1</title>
+</head>
+<body>
+	<div class="container">
+
+		<!-- jeito antigo (ainda funciona mas não tão bonito) -->
+		<button class="btn btn-success" data-bs-toggle="tooltip" data-placement="right" data-bs-title="Tooltip on top">
+			Salvar
+		</button>
+
+	</div>
+
+	<script src="assets/js/jquery-3.7.1.min.js"></script>
+	<script src="assets/js/bootstrap.bundle.min.js"></script>
+
+	<script>
+		$(function(){
+			$('[data-toggle="tooltip"]').tooltip();
+		});
+	</script>
+</body>
+</html>
