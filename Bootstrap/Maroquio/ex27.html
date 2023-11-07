@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+	<title>Componentes Simples</title>
+</head>
+<body>
+	
+	<div class="container">
+
+		<nav class="breadcrumb" style="--bs-breadcrumb-divider:'>'">
+			<li class="breadcrumb-item">
+				<a href="#">Página 1</a>
+			</li>
+			<li class="breadcrumb-item">
+				<a href="#">Página 2</a>
+			</li>
+			<li class="breadcrumb-item">
+				<a href="#">Página 3</a>
+			</li>
+		</nav>
+
+		<br><br>
+
+		<div class="spinner-border spinner-border-sm text-success"></div>
+
+		<div class="spinner-grow spinner-border-sm text-success"></div>
+
+		<br><br>
+
+		<div class="progress">
+			<div class="progress-bar w-75 bg-success progress-bar-striped progress-bar-animated">75%</div>
+		</div>
+		
+		<br>
+		
+		<div class="progress">
+			<div class="progress-bar w-25 bg-primary">25%</div>
+			<div class="progress-bar w-25 bg-secondary">25%</div>
+			<div class="progress-bar w-25 bg-success">25%</div>
+		</div>
+
+		<br><br>
+
+		<ul class="pagination">
+			<li class="page-item active">
+				<a href="#" class="page-link">1</a>
+			</li>
+			<li class="page-item">
+				<a href="#" class="page-link">2</a>
+			</li>
+			<li class="page-item">
+				<a href="#" class="page-link">3</a>
+			</li>
+		</ul>
+
+		<br><br>
+
+		<button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#painel">Abrir</button>
+
+		<div class="collapse" id="painel"> <!-- collapse-horizontal -->
+			<p>
+				Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum nam qui officia fugit id reiciendis doloribus aperiam voluptas quia? Numquam, voluptates asperiores, impedit veniam iste ullam repellat dolorem maxime fuga sapiente itaque? Reprehenderit mollitia ipsum iste minima ab hic dolore perferendis alias vero praesentium sequi aperiam et ratione, neque, quae omnis, cumque nisi nesciunt consequatur! Porro vitae esse, tenetur, dicta quasi obcaecati pariatur quo nostrum molestiae illo labore illum!
+			</p>
+		</div>
+
+	</div>
+	
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+	<script src="script.js"></script>
+</body>
+</html>
