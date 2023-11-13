@@ -1,2 +1,1 @@
-
-https://erikpanicio.github.io/Estudo-Front-end/Bootstrap/ex22.html
+https://erikpanicio.github.io/Estudo-Front-end/Bootstrap/Maroquio/ex26.html
