@@ -11,7 +11,7 @@ https://erikpanicio.github.io/Curso-B7Web/B7Web/Projetos/MediCenter/
 
 Este é um site de tributo ao ator Leonard Nimoy que interpretava o personagem Spock em Star Trek
 
-<a href="https://erikpanicio.github.io/Curso-B7Web/B7Web/Projetos/Tribute%20Page%20(Spock)"><img src="B7Web/Projetos/Tribute Page (Spock)/images/tribute-page.png"></a>
+<a href="https://erikpanicio.github.io/Estudo-Front-end/HTML%20e%20CSS/Projetos/Tribute%20Page%20(Spock)/images/tribute-page.png"><img src="B7Web/Projetos/Tribute Page (Spock)/images/tribute-page.png"></a>
 
 ## Para acessar o projeto:
 https://erikpanicio.github.io/Curso-B7Web/B7Web/Projetos/Tribute%20Page%20(Spock)
